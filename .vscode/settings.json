@@ -1,0 +1,17 @@
+{
+  "editor.tabSize": 2,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/docs": true,
+    "editor.codeActionsOnSave": 
+    {
+      "source.fixAll.eslint": true,
+    }
+  }
+  
+}
+
+
+  
+

@@ -1,3 +1,4 @@
+import { RockPaperScissors } from './rock_paper_scissors.js';
 // Elements
 const welcomeScreen = document.getElementById(`welcome-screen`);
 const gameScreen = document.getElementById(`game-screen`);
@@ -24,21 +25,21 @@ function updateScoreTallyUI(){
 
 // updateGameHistoryUI
 function updateGameHistoryUI(){
-      gameHistoryParagraph.innerHTML = ''; 
-    gameHistoryParagraph.innerHTML = game.gameHistoryLog; 
+  gameHistoryParagraph.innerHTML = ''; 
+  gameHistoryParagraph.innerHTML = game.gameHistoryLog; 
 }
 
 // start-game-button EventListener
 startGameButton.addEventListener(`click`, function (e) {
   e.preventDefault(); 
-     username = userName.value;
+  username = userName.value;
   game = new RockPaperScissors(username);
 
   welcomeScreen.classList.add(`d-none`);
   gameScreen.classList.remove(`d-none`);
-     resetGameButton.classList.remove(`d-none`);
+  resetGameButton.classList.remove(`d-none`);
   updateScoreTallyUI();
-     updateGameHistoryUI();
+  updateGameHistoryUI();
   // Complete
 });
 
