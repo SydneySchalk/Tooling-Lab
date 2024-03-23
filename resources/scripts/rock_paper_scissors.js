@@ -45,7 +45,7 @@ export class RockPaperScissors {
       return `win`; 
     }
     else { 
-      return `lose`; 
+      return `lost`; 
     }
   }
 
